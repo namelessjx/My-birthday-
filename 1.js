@@ -72,11 +72,11 @@ function updateAge() {
 document.getElementById('next-button').addEventListener('click', function() {
     const currentMessage = document.getElementById('popup-message').textContent;
 
-    if (currentMessage === "Happy Birthday!") {
-        showPopup("I love you!");
-    } else if (currentMessage === "I love you!") {
+    if (currentMessage === "Happy Birthday to me ") {
+        showPopup("I love you Modu ");
+    } else if (currentMessage === "I love you Modu") {
         showPopup("Waiting for your next birthday.");
-    } else if (currentMessage === "Waiting for your next birthday.") {
+    } else if (currentMessage === "Waiting for my next birthday.") {
         birthdayMessageShown = false; // Reset for the next year
         document.getElementById('popup').style.display = 'none'; // Close popup
     }
